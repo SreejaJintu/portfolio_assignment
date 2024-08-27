@@ -7,7 +7,7 @@
 }
 body{
  
-    background:linear-gradient(to right,rgb(13, 39, 48),rgb(134, 113, 113)
+    background:linear-gradient(to right,rgb(120, 91, 115),rgb(44, 9, 9)
     );
 }
 .container{
@@ -16,24 +16,48 @@ body{
 
 }
 .hero_section {
-    height: 100vh;
+    padding: 20px;
+   min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-   
+ 
 }
 
-.about-section{
+.hero_section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_section h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero_section div button {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+#about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
     color: white;
-    height: 100vh;
     display: flex;
     gap: 30px;
-    
-
 }
+
 .left{
     height: fit-content;
 }
@@ -56,10 +80,7 @@ body{
     gap: 30px;
     padding-bottom: 30px;
 }
-.portfolio-section{
 
-    height: 100vh;
-}
 .project-list{
 
     display: flex;
@@ -69,11 +90,14 @@ body{
 
 }
 .card{
+    /* width: calc(33.333% - 20px); 
+    margin-bottom: 20px; */
     width: 18rem;
-    height: 24rem;
+    height:25rem;
     /* box-shadow: 0 4px 8px rgba(154, 147, 147, 0.82); */
 
     transition:transform 0.3s ease;
+   
     
 }
 .card:hover{
@@ -82,5 +106,65 @@ body{
 .card-img-top {
     width: 100%;
     height:50% ;
-    object-fit: cover;
+    object-fit:cover;
+}
+
+#project-section{
+    padding: 20px;
+
+    min-height: 100vh;
+   
+}
+#contact-section{
+    padding-top: 30px;
+    padding: 20px;
+    min-height: 100vh;
+  
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* @media (max-width: 992px) {
+    .card{
+        width: calc(50% - 20px); 
+    }
+
+    .hero_section h2 {
+        font-size: 2rem;
+    }
+
+    .hero_section h5 {
+        font-size: 1.2rem;
+    }
+
+    .hero_section p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: calc(100% - 20px); 
+    }
+} */
+
+@media (max-width: 576px) {
+    .hero_section {
+        padding: 50px 0; 
+    }
+
+    .hero_section h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero_section h5 {
+        font-size: 1rem;
+    }
+
+    .hero_section p {
+        font-size: 0.75rem;
+    }
 }
