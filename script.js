@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-// Contact Form Validation
+
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
     const name = document.getElementById('name').value.trim();
@@ -35,4 +35,10 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     } else {
         document.getElementById('formFeedback').textContent = 'Please fill out all fields.';
     }
+});
+
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+    // Trigger the click event on the hidden download link
+    document.getElementById('downloadLink').click();
 });
